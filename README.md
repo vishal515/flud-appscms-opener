@@ -173,7 +173,6 @@ Flud uses various open-source libraries and components. Please refer to the in-a
 
 ## 🆘 Support*
 
-- **Official Website**: [fludapp.com](https://fludapp.com/)
 - **Email Support**: support@delphisoftwares.com
 - **Help translate Flud in your language so others can enjoy it too! Join the translation project here**: https://delphisoftwares.oneskyapp.com/collaboration/
 

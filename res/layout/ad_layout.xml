@@ -1,0 +1,4 @@
+VERSION=0.8.8.202204050719
+COMMITID=5dcf34ad180c125ee3214437b0ca4f9b7b6258fc
+HOMEURL=http://www.jacoco.org/jacoco
+RUNTIMEPACKAGE=org.jacoco.agent.rt.internal_b6258fc

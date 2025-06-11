@@ -1,0 +1,336 @@
+#
+# Copyright (C) 2012 The CyanogenMod Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+# This file has been modified
+
+# Binary
+a     = BINARY   | application/octet-stream
+bin   = BINARY   | application/octet-stream
+class = BINARY   | application/java-vm
+com   = BINARY   | application/x-msdownload
+dex   = BINARY   | application/octet-stream
+dump  = BINARY   | application/octet-stream
+exe   = BINARY   | application/x-msdownload
+dat   = BINARY   | application/octet-stream
+dll   = BINARY   | application/x-msdownload
+lib   = BINARY   | application/x-msdownload
+o     = BINARY   | application/octet-stream
+obj   = BINARY   | application/octet-stream
+pyc   = BINARY   | application/x-python-code
+pyo   = BINARY   | application/x-python-code
+ser   = BINARY   | application/java-serialized-object
+swf   = BINARY   | application/x-shockwave-flash
+so    = BINARY   | application/octet-stream
+dmg   = BINARY   | application/octet-stream
+cue   = BINARY   | application/octet-stream
+img   = BINARY   | application/octet-stream
+iso   = BINARY   | application/octet-stream
+msd   = BINARY   | application/octet-stream
+nrg   = BINARY   | application/octet-stream
+uif   = BINARY   | application/octet-stream
+
+# Text
+asm   = TEXT     | text/x-asm
+c     = TEXT     | text/x-c
+cc    = TEXT     | text/x-c
+conf  = TEXT     | text/plain
+cpp   = TEXT     | text/x-c
+css   = TEXT     | text/css
+csv   = TEXT     | text/csv
+cxx   = TEXT     | text/x-c
+def   = TEXT     | text/plain
+dic   = TEXT     | text/x-c
+diff  = TEXT     | text/plain
+dtd   = TEXT     | application/xml-dtd
+f     = TEXT     | text/x-fortran
+f77   = TEXT     | text/x-fortran
+f90   = TEXT     | text/x-fortran
+for   = TEXT     | text/x-fortran
+h     = TEXT     | text/x-c
+hh    = TEXT     | text/x-c
+hpp   = TEXT     | text/x-c
+htm   = TEXT     | text/html
+html  = TEXT     | text/html
+in    = TEXT     | text/plain
+jad   = TEXT     | text/vnd.sun.j2me.app-descriptor
+java  = TEXT     | text/x-java-source
+jnlp  = TEXT     | application/x-java-jnlp-file
+js    = TEXT     | application/javascript
+json  = TEXT     | application/json
+k9s   = TEXT     | application/x-k9settings
+list  = TEXT     | text/plain
+log   = TEXT     | text/plain
+mathml= TEXT     | application/mathml+xml
+mht   = TEXT     | message/rfc822
+mhtml = TEXT     | message/rfc822
+mxml  = TEXT     | application/xv+xml
+nfo   = TEXT     | text/plain
+p     = TEXT     | text/x-pascal
+pas   = TEXT     | text/x-pascal
+pl    = TEXT     | text/plain
+prop  = TEXT     | text/plain
+properties = TEXT| text/plain
+py    = TEXT     | text/x-python
+rc    = TEXT     | text/plain
+rss   = TEXT     | application/rss+xml
+s     = TEXT     | text/x-asm
+sgm   = TEXT     | text/sgml
+sgml  = TEXT     | text/sgml
+text  = TEXT     | text/plain
+tsv   = TEXT     | text/tab-separated-values
+txt   = TEXT     | text/plain
+wsdl  = TEXT     | application/wsdl+xml
+xht   = TEXT     | application/xhtml+xml
+xhtml = TEXT     | application/xhtml+xml
+xml   = TEXT     | text/plain
+xsl   = TEXT     | application/xml
+xslt  = TEXT     | application/xslt+xml
+
+# Document
+doc   = DOCUMENT | application/msword
+docx  = DOCUMENT | application/vnd.openxmlformats-officedocument.wordprocessingml.document
+fdf   = DOCUMENT | application/vnd.fdf
+pdf   = DOCUMENT | application/pdf
+ppt   = DOCUMENT | application/vnd.ms-powerpoint
+pptx  = DOCUMENT | application/vnd.openxmlformats-officedocument.presentationml.presentation
+odp   = DOCUMENT | application/vnd.oasis.opendocument.presentation
+ods   = DOCUMENT | application/vnd.oasis.opendocument.spreadsheet
+odt   = DOCUMENT | application/vnd.oasis.opendocument.text
+rtf   = DOCUMENT | application/rtf
+xls   = DOCUMENT | application/vnd.ms-excel
+xlsx  = DOCUMENT | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+
+# e-Book
+azw   = EBOOK    | application/octet-stream
+djv   = EBOOK    | image/x-djvu
+djvu  = EBOOK    | image/vnd.djvu
+epub  = EBOOK    | application/epub+zip
+ibooks= EBOOK    | application/x-ibooks+zip
+kf8   = EBOOK    | application/octet-stream
+lit   = EBOOK    | application/x-ms-reader
+lrf   = EBOOK    | application/x-sony-bbeb
+lrx   = EBOOK    | application/x-sony-bbeb
+mobi  = EBOOK    | application/x-mobipocket-ebook
+
+# Internet document
+ics   = MAIL     | text/calendar
+ifb   = MAIL     | text/calendar
+eml   = MAIL     | message/rfc822
+msg   = MAIL     | application/vnd.ms-outlook
+vcf   = MAIL     | text/x-vcard
+vcs   = MAIL     | text/x-vcalendar
+
+# Compress
+ace   = COMPRESS | application/x-ace-compressed
+bz    = COMPRESS | application/x-bzip
+bz2   = COMPRESS | application/x-bzip2
+cab   = COMPRESS | application/vnd.ms-cab-compressed
+cpio  = COMPRESS | application/x-cpio
+gz    = COMPRESS | application/x-gzip
+lha   = COMPRESS | application/octet-stream
+lrf   = COMPRESS | application/octet-stream
+lzh   = COMPRESS | application/octet-stream
+lzma  = COMPRESS | application/x-lzma
+jar   = COMPRESS | application/java-archive
+rar   = COMPRESS | application/x-rar-compressed
+tar   = COMPRESS | application/x-tar
+tar.bz2  = COMPRESS| application/x-bzip
+tar.gz   = COMPRESS| application/x-gzip
+tar.lzma = COMPRESS| application/x-lzma
+tgz   = COMPRESS | application/x-gzip
+xz    = COMPRESS | application/x-xz
+zip   = COMPRESS | application/zip
+Z     = COMPRESS | application/x-compress
+
+# Executable
+bat   = EXEC     | application/x-msdownload
+csh   = EXEC     | application/x-csh
+ksh   = EXEC     | text/plain
+sh    = EXEC     | application/x-sh
+
+# Database
+db    = DATABASE | application/octet-stream
+db3   = DATABASE | application/octet-stream
+mdb   = DATABASE | application/octet-stream
+
+# Font
+otf   = FONT     | application/x-font-otf
+ttf   = FONT     | application/x-font-ttf
+gsf   = FONT     | application/x-font-ghostscript
+psf   = FONT     | application/x-font-linux-psf
+
+# Image
+bmp   = IMAGE    | image/bmp
+cgm   = IMAGE    | image/cgm
+g3    = IMAGE    | image/g3fax
+gif   = IMAGE    | image/gif
+ief   = IMAGE    | image/ief
+jpe   = IMAGE    | image/jpeg
+jpeg  = IMAGE    | image/jpeg
+jpg   = IMAGE    | image/jpeg
+png   = IMAGE    | image/png
+btif  = IMAGE    | image/prs.btif
+svg   = IMAGE    | image/svg+xml
+svgz  = IMAGE    | image/svg+xml
+tif   = IMAGE    | image/tiff
+tiff  = IMAGE    | image/tiff
+psd   = IMAGE    | image/vnd.adobe.photoshop
+djv   = IMAGE    | image/vnd.djvu
+djvu  = IMAGE    | image/vnd.djvu
+dwg   = IMAGE    | image/vnd.dwg
+dxf   = IMAGE    | image/vnd.dxf
+fbs   = IMAGE    | image/vnd.fastbidsheet
+fpx   = IMAGE    | image/vnd.fpx
+fst   = IMAGE    | image/vnd.fst
+mmr   = IMAGE    | image/vnd.fujixerox.edmics-mmr
+rlc   = IMAGE    | image/vnd.fujixerox.edmics-rlc
+mdi   = IMAGE    | image/vnd.ms-modi
+npx   = IMAGE    | image/vnd.net-fpx
+wbmp  = IMAGE    | image/vnd.wap.wbmp
+xif   = IMAGE    | image/vnd.xiff
+ras   = IMAGE    | image/x-cmu-raster
+cmx   = IMAGE    | image/x-cmx
+fh    = IMAGE    | image/x-freehand
+fh4   = IMAGE    | image/x-freehand
+fh5   = IMAGE    | image/x-freehand
+fh7   = IMAGE    | image/x-freehand
+fhc   = IMAGE    | image/x-freehand
+ico   = IMAGE    | image/x-icon
+pcx   = IMAGE    | image/x-pcx
+pct   = IMAGE    | image/x-pict
+pic   = IMAGE    | image/x-pict
+pnm   = IMAGE    | image/x-portable-anymap
+pbm   = IMAGE    | image/x-portable-bitmap
+pgm   = IMAGE    | image/x-portable-graymap
+ppm   = IMAGE    | image/x-portable-pixmap
+rgb   = IMAGE    | image/x-rgb
+xbm   = IMAGE    | image/x-xbitmap
+xpm   = IMAGE    | image/x-xpixmap
+xwd   = IMAGE    | image/x-xwindowdump
+
+# Audio
+adp   = AUDIO    | audio/adpcm
+au    = AUDIO    | audio/basic
+snd   = AUDIO    | audio/basic
+kar   = AUDIO    | audio/midi
+mid   = AUDIO    | audio/midi
+midi  = AUDIO    | audio/midi
+rmi   = AUDIO    | audio/midi
+mp4a  = AUDIO    | audio/mp4
+m2a   = AUDIO    | audio/mpeg
+m3a   = AUDIO    | audio/mpeg
+m4a   = AUDIO    | audio/mp4a-latm
+m4b   = AUDIO    | audio/mp4a-latm
+m4p   = AUDIO    | audio/mp4a-latm
+mp2   = AUDIO    | audio/mpeg
+mp2a  = AUDIO    | audio/mpeg
+mp3   = AUDIO    | audio/mpeg
+mpga  = AUDIO    | audio/mpeg
+oga   = AUDIO    | audio/ogg
+ogg   = AUDIO    | audio/ogg
+spx   = AUDIO    | audio/ogg
+eol   = AUDIO    | audio/vnd.digital-winds
+dts   = AUDIO    | audio/vnd.dts
+dtshd = AUDIO    | audio/vnd.dts.hd
+lvp   = AUDIO    | audio/vnd.lucent.voice
+pya   = AUDIO    | audio/vnd.ms-playready.media.pya
+ecelp4800 = AUDIO| audio/vnd.nuera.ecelp4800
+ecelp7470 = AUDIO| audio/vnd.nuera.ecelp7470
+ecelp9600 = AUDIO| audio/vnd.nuera.ecelp9600
+aac   = AUDIO    | audio/x-aac
+aif   = AUDIO    | audio/x-aiff
+aifc  = AUDIO    | audio/x-aiff
+aiff  = AUDIO    | audio/x-aiff
+m3u   = AUDIO    | audio/x-mpegurl
+wax   = AUDIO    | audio/x-ms-wax
+wma   = AUDIO    | audio/x-ms-wma
+ra    = AUDIO    | audio/x-pn-realaudio
+ram   = AUDIO    | audio/x-pn-realaudio
+rmp   = AUDIO    | audio/x-pn-realaudio-plugin
+wav   = AUDIO    | audio/x-wav
+mka   = AUDIO    | audio/x-matroska
+
+# Video
+3gp   = VIDEO    | video/3gpp
+3gpp  = VIDEO    | video/3gpp
+3g2   = VIDEO    | video/3gpp2
+3gpp2 = VIDEO    | video/3gpp2
+h261  = VIDEO    | video/h261
+h263  = VIDEO    | video/h263
+h264  = VIDEO    | video/h264
+jpgv  = VIDEO    | video/jpeg
+jpgm  = VIDEO    | video/jpm
+jpm   = VIDEO    | video/jpm
+mj2   = VIDEO    | video/mj2
+mjp2  = VIDEO    | video/mj2
+mp4   = VIDEO    | video/mp4
+mp4v  = VIDEO    | video/mp4
+mpg4  = VIDEO    | video/mp4
+m1v   = VIDEO    | video/mpeg
+m2v   = VIDEO    | video/mpeg
+mpa   = VIDEO    | video/mpeg
+mpe   = VIDEO    | video/mpeg
+mpeg  = VIDEO    | video/mpeg
+mpg   = VIDEO    | video/mpeg
+ogv   = VIDEO    | video/ogg
+mov   = VIDEO    | video/quicktime
+qt    = VIDEO    | video/quicktime
+fvt   = VIDEO    | video/vnd.fvt
+m4u   = VIDEO    | video/vnd.mpegurl
+mxu   = VIDEO    | video/vnd.mpegurl
+pyv   = VIDEO    | video/vnd.ms-playready.media.pyv
+viv   = VIDEO    | video/vnd.vivo
+f4v   = VIDEO    | video/x-f4v
+fli   = VIDEO    | video/x-fli
+flv   = VIDEO    | video/x-flv
+m4v   = VIDEO    | video/x-m4v
+asf   = VIDEO    | video/x-ms-asf
+asx   = VIDEO    | video/x-ms-asf
+avi   = VIDEO    | video/x-msvideo
+wm    = VIDEO    | video/x-ms-wm
+wmv   = VIDEO    | video/x-ms-wmv
+wmx   = VIDEO    | video/x-ms-wmx
+wvx   = VIDEO    | video/x-ms-wvx
+movie = VIDEO    | video/x-sgi-movie
+rmvb  = VIDEO    | video/rmvb
+mkv   = VIDEO    | video/x-matroska
+
+# Security
+asc   = SECURITY | application/pgp-signature
+cer   = SECURITY | application/pkix-cert
+crl   = SECURITY | application/pkix-crl
+crt   = SECURITY | application/x-x509-ca-cert
+der   = SECURITY | application/x-x509-ca-cert
+p12   = SECURITY | application/x-pkcs12
+p7b   = SECURITY | application/x-pkcs7-certificates
+p7c   = SECURITY | application/pkcs7-mime
+p7m   = SECURITY | application/pkcs7-mime
+p7r   = SECURITY | application/x-pkcs7-certreqresp
+p7s   = SECURITY | application/pkcs7-signature
+p10   = SECURITY | application/pkcs10
+pfx   = SECURITY | application/x-pkcs12
+pki   = SECURITY | application/pkixcmp
+pgp   = SECURITY | application/pgp-encrypted
+sig   = SECURITY | application/pgp-signature
+spc   = SECURITY | application/x-pkcs7-certificates
+
+# Application
+apk   = APP      | application/vnd.android.package-archive
+pkg   = APP      | application/octet-stream
+deb   = APP      | application/x-debian-package
+udeb  = APP      | application/x-debian-package
+msi   = APP      | application/x-msdownload
+rpm   = APP      | application/x-rpm

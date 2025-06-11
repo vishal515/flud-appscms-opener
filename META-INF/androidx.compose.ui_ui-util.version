@@ -1,0 +1,104 @@
+{
+  "states": [
+    {
+      "id": 1000,
+      "type": "decision",
+      "decision_type": "is_al_gdpr",
+      "destination_state_id_true": 20,
+      "destination_state_id_false": 1001
+    },
+    {
+      "id": 20,
+      "type": "cmp_load",
+      "decision_type": "cmp_load_success",
+      "destination_state_id_true": 21,
+      "destination_state_id_false": 1001
+    },
+    {
+      "id": 1001,
+      "type": "decision",
+      "decision_type": "is_eligible_for_terms_and_privacy_policy_alert",
+      "destination_state_id_true": 1002,
+      "destination_state_id_false": 22
+    },
+    {
+      "id": 1002,
+      "type": "decision",
+      "decision_type": "has_terms_of_service_uri",
+      "destination_state_id_true": 1,
+      "destination_state_id_false": 2
+    },
+    {
+      "id": 1,
+      "type": "alert",
+      "title": {
+        "key": "applovin_pp_and_tos_title",
+        "replacements": [
+          "<APP_NAME>"
+        ]
+      },
+      "message": {
+        "key": "applovin_agree_message"
+      },
+      "transitions": [
+        {
+          "title": {
+            "key": "applovin_continue_button_text"
+          },
+          "style": "default",
+          "destination_state_id": 12
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "alert",
+      "title": {
+        "key": "applovin_pp_title",
+        "replacements": [
+          "<APP_NAME>"
+        ]
+      },
+      "message": {
+        "key": "applovin_agree_message"
+      },
+      "transitions": [
+        {
+          "title": {
+            "key": "applovin_continue_button_text"
+          },
+          "style": "default",
+          "destination_state_id": 12
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "type": "event",
+      "name": "tos_ok",
+      "destination_state_id": 22
+    },
+    {
+      "id": 22,
+      "type": "post_alert",
+      "decision_type": "cmp_preload_success",
+      "destination_state_id_true": 21,
+      "destination_state_id_false": 99
+    },
+    {
+      "id": 21,
+      "type": "cmp_show",
+      "destination_state_id": 13
+    },
+    {
+      "id": 13,
+      "type": "event",
+      "name": "gdpr_ok",
+      "destination_state_id": 99
+    },
+    {
+      "id": 99,
+      "type": "reinit"
+    }
+  ]
+}

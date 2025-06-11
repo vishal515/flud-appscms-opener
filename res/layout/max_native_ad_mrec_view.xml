@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+    <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+    <title>Unity Ad Viewer - v1.40.0-ad-viewer</title>
+    <script type="text/javascript">!function(e,n){e.logs=[];var t=["https://webview.unityads.unity3d.com/unity-ads-sdk-webview/ad-viewer-vendors.13a137fc.js","https://webview.unityads.unity3d.com/unity-ads-sdk-webview/adViewer.118ae9f1.js"],r=[],o=[];function i(){return e.crypto&&e.crypto.randomUUID?e.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,(function(e){var n=16*Math.random()|0;return("x"===e?n:3&n|8).toString(16)}))}var a=i();function s(){var n=e.location.search.split("platform=")[1];if(n)return n.split("&")[0]}var d=!1;function c(n){if(!d){d=!0;var t=new XMLHttpRequest;t.open("POST","https://cdp.cloud.unity3d.com/v1/events"),t.setRequestHeader("Content-Type","application/json"),t.send(JSON.stringify({msg:{country:"unknown",error:n,eventId:i(),eventType:"initialization_fail",gameId:"unknown",message:e.navigator.userAgent,plt:s()||"unknown",reason:"index.html",sdkVersion:0,sessionTime:performance?Math.round(performance.now()):0,tracingSessionId:a,ts:Date.now()},type:"ads.sdk.tracing_wbvw3_hourly.v1"}))}}function u(){r.length+o.length===t.length&&o.length>0&&c("Failed to load script(s): "+o.join(", "))}function x(e){c(e.message||"Unknown error")}e.addEventListener("error",x),e.removeFallbackErrorHandler=function(){e.removeEventListener("error",x)};for(var p=0;p<t.length;p++){var l=t[p],v=n.createElement("script");v.type="text/javascript",v.src=l,v.onload=function(e){r.push(e.target.getAttribute("src")),u()},v.onerror=function(e){e.preventDefault(),o.push(e.target.getAttribute("src")),u()},n.head.appendChild(v)}}(window,document)</script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
